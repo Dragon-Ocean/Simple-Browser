@@ -1,6 +1,6 @@
 # Simple-Browser
 This browser is based on the Chromium kernel and is developed using electron, thank you very much. 
-该浏览器基于Chromium内核，并使用electron开发，非常感谢。
+该浏览器基于Chromium内核，并使用Electron开发，非常感谢。
 # Steps to compile the source code: 编译源代码的步骤：
 1. Download node .js, the official website https://nodejs.org/en/     1.下载节点.js，官网 https://nodejs.org/en/
 2. Download the source code and extract it, then open the terminal, jump to the root directory of the source code, enter npm install electron -g to download electron.  2. 下载源代码并提取，然后打开终端，跳转到源代码的根目录，输入 npm install electron -g 下载 electron。
