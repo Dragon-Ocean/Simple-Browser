@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Simple Browser</title>
+	  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <link href="sm_sm_logo.ico" rel="shortcut icon">
+	  <style>
+		@font-face{
+			font-family:"corbel";
+			src: url("./font/corbel.ttf") format("truetype");
+		}
+		body{
+			verflow: hidden;
+			position: fixed;
+			width:100%;
+			height:100%;
+			background: url("sm_logo.png") no-repeat;
+			background-size:cover;
+		}
+	  </style>
+	  <script>
+			function skipbai(){
+				var sea=document.getElementById("search").value;
+				let burl="https://www.baidu.com/s?wd="+sea+"&rsv_spt=1&rsv_iqid=0xc422abe2000ee039&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&rsv_sug3=5&rsv_sug1=2&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&prefixsug=hello&rsp=5&inputT=1172&rsv_sug4=1173";
+				window.location.href=burl;
+			}
+		</script>
+    </head>
+    <body background="sm_logo.png">
+		<div class="input-group mb-3" style="position:top=100px">
+			<input type="text" class="form-control" placeholder="在百度上搜索" id="search">
+			<div class="input-group-append" style="position:top=100px">
+				<button class="btn btn-primary" type="button" id="ok" onclick="skipbai()">OK</button>
+			</div>
+		</div>
+		<script>
+			document.getElementById("search").style.top="350px";
+			document.getElementById("ok").style.top="350px";
+		</script>
+    </body>
+</html>
