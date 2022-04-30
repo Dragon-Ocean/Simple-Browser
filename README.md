@@ -1,7 +1,7 @@
 # Simple-Browser
 This browser is based on the Chromium kernel and is developed using electron, thank you very much. 
 
-Steps to compile the source code: 
+#Steps to compile the source code: 
 1. Download node .js, the official website https://nodejs.org/en/ 
 2. Download the source code and extract it, then open the terminal, jump to the root directory of the source code, enter npm install electron -g to download electron. 
 3. Enter npm init -y in the terminal, and then the content is all defaulted. 
