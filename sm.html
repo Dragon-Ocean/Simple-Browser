@@ -28,12 +28,22 @@
 				let burl="https://www.baidu.com/s?wd="+sea+"&rsv_spt=1&rsv_iqid=0xc422abe2000ee039&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&rsv_sug3=5&rsv_sug1=2&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&prefixsug=hello&rsp=5&inputT=1172&rsv_sug4=1173";
 				window.location.href=burl;
 			}
+      function skipweb(){
+				var sea=document.getElementById("go").value;
+				window.location.href="https://"+sea;
+			}
 		</script>
     </head>
     <body background="sm_logo.png">
-		<div class="input-group mb-3" style="position:top=100px">
+    <div class="input-group mb-3" style="position:top=0px">
+      <input type="text" class="form-control" placeholder="输入网址" id="go">
+      <div class="input-group-append" style="position:top=0px">
+				<button class="btn btn-primary" type="button" id="go" onclick="skipweb()">go</button>
+			</div>
+    </div>
+    <div class="input-group mb-3" style="position:top=100px">
 			<input type="text" class="form-control" placeholder="在百度上搜索" id="search">
-			<div class="input-group-append" style="position:top=100px">
+    	<div class="input-group-append" style="position:top=100px">
 				<button class="btn btn-primary" type="button" id="ok" onclick="skipbai()">OK</button>
 			</div>
 		</div>
